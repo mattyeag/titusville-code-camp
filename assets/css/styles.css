@@ -1,0 +1,204 @@
+/* ------------------------------
+   Base Styles — Mobile First
+--------------------------------*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: black;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0 0 15px 0;
+  font-weight: 700;
+}
+
+.section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.spacer {
+  height: 2px;
+  background-color: black;
+}
+
+/* ------------------------------
+   Header / Hero
+--------------------------------*/
+header {
+  /* background: #1e1e1e; */
+  background-color: black;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+/* ------------------------------
+   Navigation
+--------------------------------*/
+.nav {
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px;
+  background: #f3f3f3;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* ------------------------------
+   Intro Section
+--------------------------------*/
+#intro {
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  /* background-color: #009d9cde; */
+  /* background-image: url('/assets/img/logo-bands.png'); */
+}
+
+#band-image {
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ max-width: 50%;
+ /* margin-top: 20px; */
+}
+
+
+/* ------------------------------
+   Modules List
+--------------------------------*/
+.modules-list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+#modules {
+  /* background-color: #f4a000; */
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* ------------------------------
+   Instructor Section
+--------------------------------*/
+#instructor {
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.instructor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.instructor-photo {
+  width: 200px;
+  border-radius: 10px;
+  margin:auto;
+}
+
+/* Company logos */
+.companies {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.companies img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #ddd;
+}
+
+/* ------------------------------
+   Form
+--------------------------------*/
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  width: 100%;
+  padding: 14px;
+  background: #1e1e1e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* ------------------------------
+   Footer
+--------------------------------*/
+.footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+/* ------------------------------
+   Larger Screens (Tablet+)
+--------------------------------*/
+@media (min-width: 700px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .instructor {
+    flex-direction: row;
+  }
+}
+
+/* ------------------------------
+   Desktop Enhancements
+--------------------------------*/
+@media (min-width: 1000px) {
+  nav a {
+    font-size: 1rem;
+  }
+
+  header {
+    padding: 80px 20px;
+  }
+
+  .section {
+    padding: 70px 20px;
+  }
+}

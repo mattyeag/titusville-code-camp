@@ -128,16 +128,19 @@ header h1 {
 /* Company logos */
 .companies {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .companies img {
-  width: 70px;
+  width: fit-content;
+  /* width: 70px; */
   height: 70px;
   object-fit: cover;
   border-radius: 8px;
-  background: #ddd;
+  background: white;
+  /* border: 1px solid #ccc; */
 }
 
 /* ------------------------------
@@ -150,6 +153,7 @@ form textarea {
   margin-bottom: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  box-sizing: border-box;
 }
 
 form button {

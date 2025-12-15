@@ -139,7 +139,7 @@ header h1 {
 }
 
 .companies img {
-  width: fit-content;
+  width: auto;
   /* width: 70px; */
   height: 70px;
   object-fit: cover;

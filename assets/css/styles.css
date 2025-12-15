@@ -128,9 +128,14 @@ header h1 {
 /* Company logos */
 .companies {
   display: flex;
-  gap: 5px;
+  /* gap: 5px; */
+  margin: -5px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.companies > * {
+  margin: 5px;
 }
 
 .companies img {

@@ -140,7 +140,8 @@ header h1 {
   object-fit: cover;
   border-radius: 8px;
   background: white;
-  /* border: 1px solid #ccc; */
+  min-width: 0;
+  
 }
 
 /* ------------------------------

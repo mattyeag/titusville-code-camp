@@ -43,6 +43,7 @@ header h1 {
 
 .logo {
   max-width: 100%;
+  border: 1px solid #ccc;
 }
 
 /* ------------------------------
@@ -212,4 +213,42 @@ form button {
   .section {
     padding: 70px 20px;
   }
+}
+
+
+/* 
+RADIO BUTTONS
+*/
+/* Style the fieldset to remove default border and add spacing */
+form fieldset {
+  border: none;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Make the legend stand out */
+form fieldset legend {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  display: block;
+  color: #4ba0c8; /* match your link color */
+}
+
+/* Container for each radio label to align items center and add spacing */
+form fieldset label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1.5em;
+  cursor: pointer;
+  font-weight: 500;
+  color: #525252c2; /* text color */
+}
+
+/* Style the radio buttons */
+form fieldset input[type="radio"] {
+  margin-right: 0.4em;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #4ba0c8; /* modern way to color radios */
 }

@@ -95,13 +95,21 @@ header h1 {
   margin-bottom: 20px;
 }
 
-#modules {
+.companies {
+  position: relative;
+  z-index: 1;
+}
+
+ section {
   /* background-color: #f4a000; */
   position: relative;
   border-bottom: 1px solid #ccc;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
+section img {
+  z-index: -1;
+}
 
 
 /* ------------------------------
